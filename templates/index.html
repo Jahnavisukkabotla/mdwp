@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Million Dollar Pixel Website</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>Million Dollar Pixel Advertisement Website</h1>
+
+<form id="adForm" enctype="multipart/form-data">
+    <input type="url" name="url" placeholder="Enter website URL" required>
+    <input type="file" name="image" accept="image/*" required>
+    <button>Add Advertisement</button>
+</form>
+
+<h3 id="pageNo">Grid Page: 1</h3>
+
+<div id="grid"></div>
+
+<div class="nav">
+    <button onclick="prevPage()">⬅ Prev</button>
+    <button onclick="nextPage()">Next ➡</button>
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
